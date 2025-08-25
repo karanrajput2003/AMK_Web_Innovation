@@ -1,0 +1,118 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 5%;
+  background: transparent;
+  position: absolute; /* overlay on hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Logo */
+.navbar-logo h1 {
+  font-family: "Merienda One", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #1f2846;
+}
+
+/* Nav items (desktop) */
+.navitems {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navitems h6 {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #243ba3;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.navitems h6:hover {
+  color: #3c5efb;
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-buttons .get-a-demo,
+.mobile-menu .get-a-demo {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #3c5efb, #274ee9);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(60, 94, 251, 0.3);
+}
+
+.nav-buttons .get-a-demo:hover,
+.mobile-menu .get-a-demo:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #274ee9, #1b3fd4);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #243ba3;
+  cursor: pointer;
+  z-index: 110;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 70%;
+  background: #ffffff;
+  box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 105;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu h6 {
+  color: #243ba3;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Responsive Rules */
+@media (max-width: 992px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

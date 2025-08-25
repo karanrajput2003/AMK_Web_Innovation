@@ -1,0 +1,155 @@
+.contact-container {
+  min-height: 80vh;
+  width: 100%;
+  background-color: #f9fafc;
+  padding: 3rem 6vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Left column */
+
+/* Title & subtitle */
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-upperetitle {
+  color: #243ba3;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #212b46;
+}
+
+.contact-subtitle {
+  color: #535e63;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Form */
+.contact-form {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #232e3a;
+}
+
+/* Inputs */
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid #d8dee6;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
+  color: #111827;
+  outline: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #9aa5b1;
+}
+
+/* Focus state (accessible) */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #6e8bff;
+  box-shadow: 0 0 0 3px rgba(110, 139, 255, 0.25);
+}
+
+/* Submit button */
+.form-submit {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  background: #ceecee;
+  color: #095d7e;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.form-submit:hover {
+  background: #0f2b48;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.form-submit:active {
+  transform: translateY(0);
+}
+
+/* Right column (image) */
+.contact-right {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Small screens tweaks */
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.6rem;
+  }
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+}

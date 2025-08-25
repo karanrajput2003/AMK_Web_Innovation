@@ -1,0 +1,124 @@
+.testimonial-container {
+  min-height: 80vh;
+  width: 100%;
+  padding: 3rem 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading Section */
+.testimonial-texts h3 {
+  color: #243ba3;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.testimonial-texts h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #212b46;
+  line-height: 1.2;
+}
+
+.testimonial-texts p {
+  color: #535e63;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Scroll Container */
+.testimonial-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.testimonial-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonial-scroll::-webkit-scrollbar-thumb {
+  background: #243ba3;
+  border-radius: 10px;
+}
+
+.testimonial-scroll::-webkit-scrollbar-track {
+  background: #edf1f4;
+}
+
+/* Individual Card */
+.testimonial-card {
+  flex: 0 0 320px;
+  background: #fff;
+  border: 1px solid #edf1f4;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card .quote {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #212b46;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #243ba3;
+}
+
+.author h6 {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #535e63;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .testimonial-texts h1 {
+    font-size: 2rem;
+  }
+
+  .testimonial-scroll {
+    gap: 1rem;
+  }
+
+  .testimonial-card {
+    flex: 0 0 260px;
+    padding: 1.5rem;
+  }
+
+  .testimonial-card .quote {
+    font-size: 1rem;
+  }
+}

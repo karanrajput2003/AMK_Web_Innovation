@@ -1,0 +1,121 @@
+.services-texts {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-texts h3 {
+  color: #243ba3;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.services-texts h1 {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-texts p {
+  color: #535e63;
+  margin-bottom: 2rem;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.services-line-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Number Line */
+.number-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.text-content {
+  width: 100%;
+  position: relative;
+}
+
+/* Vertical line */
+.text-content::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(220, 220, 220);
+  z-index: 0;
+}
+
+.steps {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.number {
+  margin-right: 20px;
+  position: relative;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.number-background {
+  background-color: #d3e9fc;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.step-name {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #0b1853;
+}
+
+.step-description {
+  font-weight: 300;
+  color: #718391;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .services-texts h1 {
+    font-size: 1.8rem;
+  }
+
+  .step-name {
+    font-size: 16px;
+  }
+
+  .step-description {
+    font-size: 13px;
+  }
+
+  .number-container {
+    padding: 0 0.5rem;
+  }
+}

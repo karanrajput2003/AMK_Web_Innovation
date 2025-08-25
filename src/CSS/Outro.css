@@ -1,0 +1,35 @@
+.outro-container {
+  min-height: 50vh;
+  background-color: #0b1853;
+  padding: 5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.outro-texts h1 {
+  line-height: 1;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.outro-texts p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.outro-texts button {
+  display: block;
+  margin: 2rem auto 0 auto;
+  gap: 1rem;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #3c5efb;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}

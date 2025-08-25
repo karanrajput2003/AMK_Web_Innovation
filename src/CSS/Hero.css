@@ -1,0 +1,156 @@
+.hero-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #f9fbff, #eaf3ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Abstract curved background shapes */
+.hero-container::before,
+.hero-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Big pastel circle (top-right) */
+.hero-container::before {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle at center, #ffe7d6, #ffd4d4);
+  top: -150px;
+  right: -200px;
+}
+
+/* Smaller pastel circle (bottom-left) */
+.hero-container::after {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at center, #d6f3ff, #c4e4ff);
+  bottom: -150px;
+  left: -150px;
+}
+
+/* Ensure content sits above background */
+.hero-main-heading,
+.hero-image,
+.hero-button,
+.hero-upper-heading {
+  position: relative;
+  z-index: 1;
+}
+
+/* Text block */
+.hero-main-heading {
+  max-width: 700px;
+}
+
+.hero-main-heading h2 {
+  font-family: volkhov, serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -4%;
+  color: #181e4b;
+}
+
+.hero-main-heading p {
+  margin-top: 1.5rem;
+  color: #5e6282;
+  line-height: 1.6;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Image */
+.hero-image {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.hero-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.hero-button .get-started,
+.hero-button .explore {
+  padding: 0.85rem 1.75rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.hero-button .get-started {
+  background: linear-gradient(135deg, #3c5efb, #274ee9);
+  color: white;
+  border: none;
+  box-shadow: 0 6px 15px rgba(60, 94, 251, 0.3);
+}
+
+.hero-button .get-started:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #274ee9, #1b3fd4);
+}
+
+.hero-button .explore {
+  background-color: transparent;
+  border: 2px solid #3c5efb;
+  color: #3c5efb;
+}
+
+.hero-button .explore:hover {
+  background: #eaf0ff;
+  transform: translateY(-3px);
+}
+
+/* --- Laptop/Desktop layout --- */
+@media (min-width: 992px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4rem 6rem;
+  }
+
+  .hero-main-heading {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .hero-image {
+    flex: 1;
+    margin: 0;
+    max-width: 50%;
+  }
+
+  .hero-button {
+    justify-content: flex-start;
+  }
+}
