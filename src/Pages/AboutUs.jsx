@@ -1,5 +1,5 @@
 import React from "react";
-//import AboutImg from "../assets/security.png"; // replace with your own image
+import AboutImg from "../assets/Security.png";
 import "../CSS/AboutUs.css";
 
 function AboutUs() {
@@ -20,11 +20,12 @@ function AboutUs() {
         <button>Learn More</button>
       </div>
       <div className="about-images">
-{/*         <img src={AboutImg} alt="About AMK Web Innovation" /> */}
+        <img src={AboutImg} alt="About AMK Web Innovation" />
       </div>
     </div>
   );
 }
 
 export default AboutUs;
+
 
