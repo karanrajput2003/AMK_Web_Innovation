@@ -1,16 +1,17 @@
 import React from "react";
-import "../CSS/Outro.css"; 
+import "../CSS/Outro.css";
 
 function Outro() {
   return (
     <div className="outro-container">
       <div className="outro-texts">
-        <h1>Start your financial journey today</h1>
+        <h1>Let’s Build the Future Together</h1>
         <p>
-          Join thousands of users already mastering their finances. Get
-          <br /> started with a free account now-no credit card required.
+          Partner with <span className="highlight">AMK Web Innovation</span> for
+          cutting-edge digital solutions. From websites to enterprise
+          applications, we transform ideas into reality.
         </p>
-        <button>Create my free account</button>
+        <button>Get in Touch</button>
       </div>
     </div>
   );

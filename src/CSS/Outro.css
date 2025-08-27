@@ -7,6 +7,13 @@
   justify-content: center;
 }
 
+.outro-texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .outro-texts h1 {
   line-height: 1;
   font-size: 40px;
@@ -18,6 +25,7 @@
   font-size: 15px;
   margin-bottom: 1rem;
   font-weight: 200;
+  width: 50%;
 }
 
 .outro-texts button {
