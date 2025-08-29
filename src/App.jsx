@@ -9,8 +9,6 @@ import Features from "./Pages/Features";
 import HowItWorks from "./Pages/HowItWorks";
 import Testimonial from "./Pages/Testimonial";
 import Outro from "./Pages/Outro";
-import Footer from "./Pages/Footer";
-import Navbar from "./Components/Navbar";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
@@ -22,7 +20,6 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Navbar />
       <Hero />
       <Services />
       <Outro />
@@ -30,7 +27,6 @@ function App() {
       <AboutUs />
       <Testimonial />
       <Contact />
-      <Footer />
     </QueryClientProvider>
   );
 }

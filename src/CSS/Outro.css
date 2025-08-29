@@ -12,32 +12,88 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .outro-texts h1 {
-  line-height: 1;
+  line-height: 1.2;
   font-size: 40px;
   margin-bottom: 1rem;
 }
 
 .outro-texts p {
-  text-align: center;
   font-size: 15px;
   margin-bottom: 1rem;
   font-weight: 200;
   width: 50%;
 }
 
-.outro-texts button {
-  display: block;
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin: 2rem auto 0 auto;
-  gap: 1rem;
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 10px;
   cursor: pointer;
   background-color: #3c5efb;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+  background-color: #3c5efb;
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .outro-container {
+    padding: 3rem 2rem;
+  }
+
+  .outro-texts h1 {
+    font-size: 28px;
+  }
+
+  .outro-texts p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .whatsapp-btn {
+    font-size: 14px;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .outro-texts h1 {
+    font-size: 22px;
+  }
+
+  .outro-texts p {
+    font-size: 13px;
+  }
+
+  .whatsapp-btn {
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 16px;
+  }
 }

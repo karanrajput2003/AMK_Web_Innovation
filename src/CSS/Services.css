@@ -1,7 +1,7 @@
 .services-container {
   padding: 2rem 1rem;
   background-image: radial-gradient(#d1d5db 1px, transparent 1px);
-  background-size: 20px 20px; /* adjust spacing of ++ */
+  background-size: 20px 20px;
 }
 
 .services-texts {
@@ -19,7 +19,6 @@
 }
 
 .services-texts h1 {
-  text-align: center;
   line-height: 1.2;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -40,56 +39,52 @@
   align-items: flex-start;
 }
 
-/* Number Line */
+/* Number Line (Two Column Layout) */
 .number-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   padding: 0 1rem;
 }
 
-.text-content {
-  width: 100%;
-  position: relative;
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Vertical line */
-.text-content::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 14px;
-  width: 2px;
-  height: 100%;
-  background-color: rgb(220, 220, 220);
-  z-index: 0;
+.column2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .steps {
   display: flex;
+  align-items: flex-start;
+  gap: 15px;
   margin-bottom: 30px;
-  position: relative;
+  max-width: 480px;
 }
 
 .number {
-  margin-right: 20px;
-  position: relative;
-  width: 30px;
-  display: flex;
-  justify-content: center;
+  flex-shrink: 0;
 }
 
 .number-background {
   background-color: #d3e9fc;
-  height: 30px;
-  width: 30px;
+  color: #0b1853;
+  height: 36px;
+  width: 36px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  position: relative;
-  z-index: 1;
   font-weight: 600;
 }
 
@@ -108,9 +103,49 @@
 }
 
 /* 📱 Mobile responsiveness */
+@media (max-width: 900px) {
+  .number-container {
+    gap: 40px;
+  }
+
+  .step-name {
+    font-size: 18px;
+  }
+
+  .step-description {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 768px) {
+  .number-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .steps {
+    max-width: 100%;
+  }
+
   .services-texts h1 {
     font-size: 1.8rem;
+  }
+
+  .services-texts p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+
+/* 📱 Extra small screens */
+@media (max-width: 480px) {
+  .services-texts h1 {
+    font-size: 1.5rem;
+  }
+
+  .services-texts p {
+    font-size: 0.85rem;
   }
 
   .step-name {
@@ -118,10 +153,12 @@
   }
 
   .step-description {
-    font-size: 13px;
+    font-size: 12px;
   }
 
-  .number-container {
-    padding: 0 0.5rem;
+  .number-background {
+    height: 28px;
+    width: 28px;
+    font-size: 12px;
   }
 }

@@ -49,6 +49,31 @@
   align-items: center;
 }
 
+.get-a-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #3c5efb;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.get-a-demo:hover {
+  background-color: #3c5efb;
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+}
+
 .nav-buttons .get-a-demo,
 .mobile-menu .get-a-demo {
   font-weight: 500;
@@ -86,7 +111,7 @@
   height: 100vh;
   width: 70%;
   background: #ffffff;
-  box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -115,4 +140,18 @@
   .hamburger {
     display: block;
   }
+}
+
+/* Remove underline from links */
+.navitems a,
+.mobile-menu a {
+  text-decoration: none;
+  color: inherit; /* keep text color same as parent */
+}
+
+/* Optional hover effect instead of underline */
+.navitems a:hover h6,
+.mobile-menu a:hover h6 {
+  color: #007bff; /* your theme color */
+  cursor: pointer;
 }
