@@ -2,6 +2,7 @@ import React from 'react'
 import HeroImg from '../assets/hero-img.webp'
 import '../CSS/Hero.css'
 import CRED from '../assets/cred-logo.png'
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -14,8 +15,8 @@ function Hero() {
                 At AMK Web Innovation, we craft powerful digital experiences that engage audiences and transform ideas into impactful online solutions.
             </p>
             <div className='hero-button'>
-                <button className='get-started'>Get Started</button>
-                <button className='explore'>Explore feautures</button>
+{/*                 <button className='get-started'>Get Started</button> */}
+                <Link className='explore' to="/projects">Explore Our Projects</Link>
             </div>
         </div>
         <div className='hero-image'>
@@ -25,5 +26,6 @@ function Hero() {
     </div>
   )
 }
+
 
 export default Hero
