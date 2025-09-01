@@ -142,16 +142,15 @@
   }
 }
 
-/* Remove underline from links */
 .navitems a,
 .mobile-menu a {
   text-decoration: none;
-  color: inherit; /* keep text color same as parent */
+  color: inherit;
 }
 
-/* Optional hover effect instead of underline */
 .navitems a:hover h6,
 .mobile-menu a:hover h6 {
-  color: #007bff; /* your theme color */
+  color: #007bff;
   cursor: pointer;
 }
+
