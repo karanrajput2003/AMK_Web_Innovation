@@ -1,6 +1,6 @@
 import React from "react";
-import ecommerceImg from "../assets/calculator.png";
-import financeAppImg from "../assets/Cards.png";
+import AarogyaImg from "../assets/Aarogya_Bharat.png";
+import VikasImg from "../assets/image.png";
 import erpImg from "../assets/payonline.png";
 import "../CSS/Features.css";
 
@@ -8,19 +8,19 @@ const Features = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Aarogya Bharat",
       description:
-        "A scalable e-commerce platform with intuitive UI, secure payments, and seamless shopping experiences for customers worldwide.",
-      image: ecommerceImg,
-      link: "#ecommerce",
+        "A telehealth platform enabling seamless virtual consultations with role-based logins, secure patient record access via QR codes, and an AI-powered audio-to-audio chatbot for instant medical recommendations.",
+      image: AarogyaImg,
+      link: "https://aarogya-bharat.vercel.app/",
     },
     {
       id: 2,
-      title: "Finance Tracking App",
+      title: "Vikas Setu",
       description:
-        "A smart mobile application to manage personal finances, track expenses, set budgets, and get AI-driven financial insights.",
-      image: financeAppImg,
-      link: "#financeapp",
+        "A collaborative platform acting as a mediator between Departments, Admins, Field Officers, Project Managers, and Contractors, ensuring seamless communication, efficient coordination, and transparent project management.",
+      image: VikasImg,
+      link: "https://vikas-setu.vercel.app/",
     },
     {
       id: 3,
@@ -83,3 +83,4 @@ const Features = () => {
 };
 
 export default Features;
+
