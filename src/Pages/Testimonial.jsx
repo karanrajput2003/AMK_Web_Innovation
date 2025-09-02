@@ -4,26 +4,29 @@ import "../CSS/Testimonial.css";
 
 const testimonials = [
   {
-    quote:
-      "AMK Web Innovation helped us launch a modern and dynamic website. The process was smooth, and their support is unmatched.",
-    name: "Arjun Mehta",
-    role: "Entrepreneur",
-    img: TestimonialImg,
-  },
-  {
-    quote:
-      "Their cloud and automation solutions transformed the way we handle projects. Reliable, efficient, and always available.",
-    name: "Priya Sharma",
-    role: "Project Manager",
-    img: TestimonialImg,
-  },
-  {
-    quote:
-      "We got a professional website with timely delivery. The team truly understands business needs and delivers with precision.",
-    name: "Rahul Verma",
-    role: "Business Owner",
-    img: TestimonialImg,
-  },
+  quote: "Great service and very supportive team. They understood my requirements clearly and guided me throughout the project.",
+  name: "Ravi Kumar",
+  role: "Startup Founder",
+  img: TestimonialImg,
+},
+{
+  quote: "They delivered exactly what I needed on time. The quality of work and communication made the whole process stress-free.",
+  name: "Sneha Patel",
+  role: "Marketing Manager",
+  img: TestimonialImg,
+},
+{
+  quote: "Professional work and smooth process throughout. The team was quick to respond and made valuable suggestions for improvements.",
+  name: "Amit Singh",
+  role: "Freelancer",
+  img: TestimonialImg,
+},
+{
+  quote: "Highly recommend them for reliable solutions. Their dedication and timely support made a big difference for my business.",
+  name: "Neha Gupta",
+  role: "Business Owner",
+  img: TestimonialImg,
+}
 ];
 
 function Testimonial() {
@@ -45,7 +48,6 @@ function Testimonial() {
           <div className="testimonial-card" key={index}>
             <div className="quote">“{t.quote}”</div>
             <div className="author">
-              <img src={t.img} alt={t.name} />
               <div>
                 <h3>{t.name}</h3>
                 <h6>{t.role}</h6>
@@ -59,3 +61,4 @@ function Testimonial() {
 }
 
 export default Testimonial;
+
