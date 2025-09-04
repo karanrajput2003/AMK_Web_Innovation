@@ -21,15 +21,7 @@ const Features = () => {
         "A collaborative platform acting as a mediator between Departments, Admins, Field Officers, Project Managers, and Contractors, ensuring seamless communication, efficient coordination, and transparent project management.",
       image: VikasImg,
       link: "https://vikas-setu.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Enterprise ERP System",
-      description:
-        "A powerful ERP solution designed to streamline operations, optimize workflows, and improve decision-making for enterprises.",
-      image: erpImg,
-      link: "#erp",
-    },
+    }
   ];
 
   return (
@@ -83,4 +75,5 @@ const Features = () => {
 };
 
 export default Features;
+
 
